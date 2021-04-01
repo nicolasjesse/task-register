@@ -40,8 +40,6 @@ export default {
     methods: {
         deleteTask() {
             this.$parent.$emit('deleteTask', this.taskObject)
-            this.$el.parentNode.removeChild(this.$el);
-            this.$destroy()
         }
     }
 }
